@@ -2,7 +2,8 @@
 
 **Visual comparison of Bayesian Hyperparameter Optimization and Grid Search in a controlled 3D objective space**
 
-**Video Demonstration**: [https://youtu.be/PxGvPgyvNHE](https://youtu.be/PxGvPgyvNHE)
+[![Watch the animation](media/thumbnail.png)](https://youtu.be/PxGvPgyvNHE)
+
 
 ---
 
