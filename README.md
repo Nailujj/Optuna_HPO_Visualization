@@ -21,8 +21,9 @@ The goal is to provide an intuitive, visual understanding of how Bayesian optimi
 
 We define a synthetic two-dimensional continuous hyperparameter space:
 
-- **Parameter 1**: Learning Rate \(\in [10^{-6}, 10^{-4}]\) (log-scale)
-- **Parameter 2**: Layer-wise Learning Rate Decay \(\in [0.6, 1.0]\)
+- **Parameter 1**: Learning Rate ![lr](https://latex.codecogs.com/png.image?\dpi{120}x\in[10^{-6},10^{-4}]) (log-scale)  
+- **Parameter 2**: Layer-wise LR Decay ![decay](https://latex.codecogs.com/png.image?\dpi{120}x\in[0.6,1.0])
+
 
 The objective function \( f(\theta) \) maps a 2D parameter vector \(\theta = (x, y)\) to a scalar "loss" value \( z \), and is defined as:
 
