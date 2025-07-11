@@ -24,7 +24,17 @@ We define a synthetic two-dimensional continuous hyperparameter space:
 - **Parameter 1**: Learning Rate \(\in [10^{-6}, 10^{-4}]\) (log-scale)
 - **Parameter 2**: Layer-wise Learning Rate Decay \(\in [0.6, 1.0]\)
 
-The objective function is a handcrafted, multimodal surface mimicking real-world optimization challenges (e.g. multiple local minima, nonlinearity). This is visualized as a 3D surface over the parameter domain.
+The objective function \( f(\theta) \) maps a 2D parameter vector \(\theta = (x, y)\) to a scalar "loss" value \( z \), and is defined as:
+
+\[
+f(x, y) = 1 - \left( 
+    \frac{10 \cdot e^{-((x + 2)^2 + (y + 2)^2)}}{1.0} +
+    \frac{14.5 \cdot e^{-((x)^2 + (y - 3)^2)}}{2.0} +
+    \frac{5.0 \cdot e^{-((x - 3)^2 + (y + 1)^2)}}{1.5}
+\right) \bigg/ \left(2.0 + 1.5 + 1.0\right)
+\]
+
+This function is multimodal and normalized to map values roughly into the range \([0, 1]\), with multiple local minima.
 
 Two optimization strategies are then simulated:
 
