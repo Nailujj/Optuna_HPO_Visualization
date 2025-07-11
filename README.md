@@ -26,13 +26,13 @@ We define a synthetic two-dimensional continuous hyperparameter space:
 
 The objective function \( f(\theta) \) maps a 2D parameter vector \(\theta = (x, y)\) to a scalar "loss" value \( z \), and is defined as:
 
-\[
+$$
 f(x, y) = 1 - \left( 
     \frac{10 \cdot e^{-((x + 2)^2 + (y + 2)^2)}}{1.0} +
     \frac{14.5 \cdot e^{-((x)^2 + (y - 3)^2)}}{2.0} +
     \frac{5.0 \cdot e^{-((x - 3)^2 + (y + 1)^2)}}{1.5}
 \right) \bigg/ \left(2.0 + 1.5 + 1.0\right)
-\]
+$$
 
 This function is multimodal and normalized to map values roughly into the range \([0, 1]\), with multiple local minima.
 
