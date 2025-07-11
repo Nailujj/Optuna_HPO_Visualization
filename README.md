@@ -25,7 +25,7 @@ We define a synthetic two-dimensional continuous hyperparameter space:
 - **Parameter 2**: Layer-wise LR Decay ![decay](https://latex.codecogs.com/png.image?\dpi{120}x\in[0.6,1.0])
 
 
-The objective function \( f(\theta) \) maps a 2D parameter vector \(\theta = (x, y)\) to a scalar "loss" value \( z \), and is defined as:
+The objective function *f(θ)* maps a 2D parameter vector *θ = (x, y)* to a scalar -F_1 value, and is defined as:
 
 $$
 f(x, y) = 1 - \left( 
